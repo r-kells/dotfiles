@@ -57,7 +57,6 @@ brew install docker docker-compose
 
 # Remove outdated versions from the cellar.
 brew cleanup
-rm -f -r /Library/Caches/Homebrew/*
 
 # install ZSH (last because it changes shell and stops commands)
 brew install zsh zsh-completions

@@ -51,6 +51,7 @@ brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" shiftit
+brew cask install --appdir="/Applications" pritunl
 
 # Install Docker
 brew install docker docker-compose

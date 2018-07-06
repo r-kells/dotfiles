@@ -53,7 +53,7 @@ brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" shiftit
 
 # Install Docker
-brew install docker, docker-compose
+brew install docker docker-compose
 
 # Remove outdated versions from the cellar.
 brew cleanup

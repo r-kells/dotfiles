@@ -52,13 +52,13 @@ brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" shiftit
 
-# install ZSH
-brew install zsh zsh-completions
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Install Docker
 brew install docker, docker-compose
 
 # Remove outdated versions from the cellar.
 brew cleanup
 rm -f -r /Library/Caches/Homebrew/*
+
+# install ZSH (last because it changes shell and stops commands)
+brew install zsh zsh-completions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

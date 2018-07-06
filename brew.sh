@@ -27,7 +27,7 @@ brew install gnu-sed --with-default-names
 
 # Install Python
 brew install python
-brew install python3
+brew install python@2
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -41,7 +41,6 @@ brew install awscli
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" pycharm
-brew cask install --appdir="/Applications" github-desktop
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox

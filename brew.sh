@@ -51,7 +51,7 @@ brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" appcleaner
-
+brew cask install --appdir="/Applications" shiftit
 
 # install ZSH
 brew install zsh zsh-completions

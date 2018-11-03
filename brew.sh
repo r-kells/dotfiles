@@ -18,8 +18,6 @@ brew upgrade --all
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
-# Install some other useful utilities like `sponge`.
-brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
@@ -27,7 +25,7 @@ brew install gnu-sed --with-default-names
 
 # Install Python
 brew install python
-brew install python@2
+brew install python@3
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -42,12 +40,8 @@ brew install awscli
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" pycharm
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" shiftit

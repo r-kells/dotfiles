@@ -1,0 +1,6 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = sublime
+[user]
+	name = Ryan Kelly
+	email = ryan.kelly.md@gmail.com

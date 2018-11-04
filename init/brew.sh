@@ -27,14 +27,22 @@ brew install gnu-sed --with-default-names
 brew install python
 brew install python@3
 
+# Install Bash 4.
+brew install bash
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-
-brew install git
+brew install grep
+brew install openssh
+brew install screen
+brew install xz
+brew install rename
 brew install awscli
+
+# git things
+brew install git
+brew install git-lfs
+git lfs install
+git lfs install --system
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text

@@ -12,6 +12,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/templates/zshrc.zsh-template
 
 for file in ~/.{exports,aliases,functions,secrets}; do
     source "$file";

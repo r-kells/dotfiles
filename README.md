@@ -20,4 +20,3 @@ In order:
 3. Symlinks all files in `dots` to `~`.
 4. Symlinks all files in `static` to `~`.
 5. `init/osx.sh` - Sets sane osx configs.
-6. Sets global `.gitignore` file

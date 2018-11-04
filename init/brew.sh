@@ -47,6 +47,7 @@ git lfs install --system
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" pycharm
+brew cask install --appdir="/Applications" visual-studio-code
 # Misc casks
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" vlc

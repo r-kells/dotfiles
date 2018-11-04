@@ -2,9 +2,9 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # install updates and CLI tools
-# bash init/osxprep.sh
+bash init/osxprep.sh
 # Install the things!
-# bash init/brew.sh
+bash init/brew.sh
 
 # Symlink dot & zshrc files (dotglob gets hidden files)
 shopt -s dotglob
@@ -21,4 +21,4 @@ shopt -u dotglob
 ln -s -f $DIR/static ~/static;
 
 # Run osx setup
-# bash init/osx.sh
+bash init/osx.sh

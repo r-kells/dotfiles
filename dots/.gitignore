@@ -24,3 +24,7 @@ Thumbs.db
 
 # Repo scratch directory
 scratch/
+
+# VS code
+.vscode
+*.code-workspace

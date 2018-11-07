@@ -27,6 +27,10 @@ brew install gnu-sed --with-default-names
 brew install python
 brew install python@3
 
+# Install Java8
+brew tap caskroom/versions
+brew cask install java8
+
 # Install Bash 4.
 brew install bash
 # Install more recent versions of some OS X tools.

@@ -5,6 +5,9 @@ alias p="cd ~/github"
 alias g="git"
 alias h="history"
 
+alias sv='source venv/bin/activate'
+alias dv='deactivate'
+
 colorflag="-G"
 
 # List all files colorized in long format

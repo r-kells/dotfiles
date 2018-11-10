@@ -31,6 +31,9 @@ brew install python@3
 brew tap caskroom/versions
 brew cask install java8
 
+# Install golang
+brew install go
+
 # Install Bash 4.
 brew install bash
 # Install more recent versions of some OS X tools.

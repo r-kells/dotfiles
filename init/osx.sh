@@ -215,7 +215,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
-
+# Disable dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 

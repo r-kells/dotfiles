@@ -26,6 +26,7 @@ brew install gnu-sed --with-default-names
 # Install Python
 brew install python
 brew install python@3
+brew install pyenv
 
 # Install Java8
 brew tap caskroom/versions

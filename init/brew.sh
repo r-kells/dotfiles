@@ -24,8 +24,6 @@ brew install findutils
 brew install gnu-sed --with-default-names
 
 # Install Python
-brew install python
-brew install python@3
 brew install pyenv
 
 # Install Java8
@@ -54,7 +52,7 @@ git lfs install --system
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" pycharm
+brew cask install --appdir="/Applications" pycharm-ce
 brew cask install --appdir="/Applications" visual-studio-code
 # Misc casks
 brew cask install --appdir="/Applications" slack

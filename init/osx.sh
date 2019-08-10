@@ -28,10 +28,6 @@ sudo pmset -a standbydelay 86400
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
-# Disable smooth scrolling
-# (Uncomment if you’re on an older Mac that messes up the animation)
-#defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false
-
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
@@ -69,31 +65,11 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-# Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
-
-# Never go into computer sleep mode
-# sudo systemsetup -setcomputersleep Off > /dev/null
-
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
-
-###############################################################################
-# SSD-specific tweaks                                                         #
-###############################################################################
-
-# # Disable hibernation (speeds up entering sleep mode)
-# sudo pmset -a hibernatemode 0
-
-# # Remove the sleep image file to save disk space
-# sudo rm /private/var/vm/sleepimage
-# # Create a zero-byte file instead…
-# sudo touch /private/var/vm/sleepimage
-# # …and make sure it can’t be rewritten
-# sudo chflags uchg /private/var/vm/sleepimage
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -105,9 +81,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-# Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -219,9 +192,6 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
-
-# Enable spring loading for all Dock items
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true

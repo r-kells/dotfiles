@@ -1,7 +1,11 @@
+# Brew installed executables
+export PATH="/usr/local/sbin:$PATH"
+
 export SSH_KEY_PATH="~/.ssh/rsa_id";
+
 #gopaths
-export PATH=$PATH:$(go env GOPATH)/bin
-export GOPATH=$(go env GOPATH)
+# export PATH=$PATH:$(go env GOPATH)/bin
+# export GOPATH=$(go env GOPATH)
 
 #pyenv
 export PYENV_ROOT="$HOME/.pyenv"

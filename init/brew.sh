@@ -11,7 +11,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -21,14 +21,13 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install Python
 brew install pyenv
 
 # Install Java8
-brew tap caskroom/versions
-brew cask install java8
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
 # Install golang
 brew install go
@@ -36,7 +35,7 @@ brew install go
 # Install Bash 4.
 brew install bash
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
@@ -61,11 +60,14 @@ brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" shiftit
 brew cask install --appdir="/Applications" pritunl
+brew cask install --appdir="/Applications" github
 
 # Install Docker
 brew install docker docker-compose
 
 # Remove outdated versions from the cellar.
+brew untap adoptopenjdk/openjdk
+brew untap caskroom/versions
 brew cleanup
 
 # install ZSH (last because it changes shell and stops commands)

@@ -71,5 +71,5 @@ brew untap caskroom/versions
 brew cleanup
 
 # install ZSH (last because it changes shell and stops commands)
-brew install zsh zsh-completions
+brew install zsh zsh-completions zsh-syntax-highlighting
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

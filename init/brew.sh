@@ -43,6 +43,9 @@ brew install xz
 brew install rename
 brew install awscli
 
+# Databases
+brew install postgresql
+
 # git things
 brew install git
 brew install git-lfs

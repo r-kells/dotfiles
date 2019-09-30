@@ -4,7 +4,7 @@ export PATH="/usr/local/sbin:$PATH"
 export SSH_KEY_PATH="~/.ssh/rsa_id";
 
 #gopaths
-# export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 # export GOPATH=$(go env GOPATH)
 
 #pyenv

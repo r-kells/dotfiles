@@ -26,8 +26,8 @@ brew install gnu-sed
 # Install Python
 brew install pyenv
 
-# Install Java8
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+# Install Java11
+brew cask install adoptopenjdk/openjdk/adoptopenjdk11
 
 # Install golang
 brew install go
@@ -57,13 +57,12 @@ brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" pycharm-ce
 brew cask install --appdir="/Applications" visual-studio-code
 # Misc casks
-brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" shiftit
 brew cask install --appdir="/Applications" pritunl
 brew cask install --appdir="/Applications" github
+brew cask install --appdir="/Applications" google-chrome
 
 # Install Docker
 brew install docker docker-compose

@@ -5,7 +5,9 @@ alias p="cd ~/github"
 alias g="git"
 alias h="history"
 
-alias sv='source venv/bin/activate'
+alias k='kubectl'
+
+alias sv='source .venv/bin/activate'
 alias dv='deactivate'
 
 colorflag="-G"
